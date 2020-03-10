@@ -11,6 +11,8 @@ class App extends Component {
       name:'Jubayer Alam Khan',
       profession: 'Front-end-developer'
     }
+    var skills = ['HTML5','CSS3','SASS','JavaScript','React','Vue'];
+
     return (
       <Fragment>
         <div className="App">
@@ -18,7 +20,7 @@ class App extends Component {
 
             <img src={logo} className="App-logo" alt="logo" />
 
-            <Person mySelf={mySelf}/>
+            <Person mySelf={mySelf} skills={skills}/>
           </header>
         </div>
       </Fragment>
