@@ -1,0 +1,12 @@
+.btn {
+  padding: 15px 30px;
+  border: 1px solid #eb1b33;
+  background: #eb1b33;
+  color: #fff;
+  font-size: 18px;
+  text-transform: capitalize;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;
+}

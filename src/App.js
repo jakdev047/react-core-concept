@@ -4,6 +4,7 @@ import './App.css';
 
 // component
 import Person from './component/Person/Person';
+import Counter from './component/Counter/Counter';
 
 class App extends Component {
   render() {
@@ -21,6 +22,9 @@ class App extends Component {
             <img src={logo} className="App-logo" alt="logo" />
 
             <Person mySelf={mySelf} skills={skills}/>
+
+            <Counter />
+
           </header>
         </div>
       </Fragment>

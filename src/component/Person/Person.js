@@ -1,5 +1,7 @@
 import React, { Component,Fragment } from 'react';
 
+import './person.css';
+
 class Person extends Component {
   render() {
     const {name,profession} = this.props.mySelf;
