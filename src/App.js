@@ -1,27 +1,29 @@
-import React from 'react';
+import React, { Component,Fragment } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+// component
+import Person from './component/Person/Person';
 
-  var mySelf = {
-    name:'Jubayer Alam Khan',
-    profession: 'Front-end-developer'
+class App extends Component {
+  render() {
+    var mySelf = {
+      name:'Jubayer Alam Khan',
+      profession: 'Front-end-developer'
+    }
+    return (
+      <Fragment>
+        <div className="App">
+          <header className="App-header">
+
+            <img src={logo} className="App-logo" alt="logo" />
+
+            <Person mySelf={mySelf}/>
+          </header>
+        </div>
+      </Fragment>
+    )
   }
-
-  var myStyle = {
-    color:'#eb1b33'
-  }
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2 style={myStyle}>{mySelf.name}</h2>
-        <p style={{fontStyle:'italic',color:'#eb1'}}>{mySelf.profession}</p>
-      </header>
-    </div>
-  );
 }
 
 export default App;
